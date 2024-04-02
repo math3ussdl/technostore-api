@@ -1,4 +1,4 @@
-package me.math3ussdl.technostoreapi.user.internal;
+package me.math3ussdl.technostoreapi.features.user.internal;
 
 import java.util.UUID;
 

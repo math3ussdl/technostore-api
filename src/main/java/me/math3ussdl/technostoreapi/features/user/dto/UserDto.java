@@ -1,6 +1,6 @@
-package me.math3ussdl.technostoreapi.user.dto;
+package me.math3ussdl.technostoreapi.features.user.dto;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import jakarta.validation.constraints.Email;
@@ -27,6 +27,6 @@ public class UserDto {
 
     private boolean active;
     
-    private OffsetDateTime created;
-    private OffsetDateTime updated;
+    private LocalDateTime created;
+    private LocalDateTime updated;
 }

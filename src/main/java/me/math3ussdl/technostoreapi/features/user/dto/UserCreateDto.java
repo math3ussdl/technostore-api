@@ -1,4 +1,4 @@
-package me.math3ussdl.technostoreapi.user.dto;
+package me.math3ussdl.technostoreapi.features.user.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

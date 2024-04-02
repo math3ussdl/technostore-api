@@ -1,0 +1,42 @@
+directive @specifiedBy(url: String!) on SCALAR
+
+scalar DateTime
+  @specifiedBy(url: "https://scalars.graphql.org/andimarek/date-time.html")
+
+## Types
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    active: Boolean
+    created: DateTime
+    updated: DateTime
+}
+
+input UpdateUser {
+    id: ID!
+    name: String!
+    email: String!
+    active: Boolean!
+    created: DateTime!
+    updated: DateTime!
+}
+
+input CreateUser {
+    name: String!
+    email: String!
+    password: String!
+    passwordConfirmation: String!
+}
+
+## Operations
+type Query {
+    getUsers: [User]
+    getUserById(id: ID!) : User
+}
+
+type Mutation {
+    createUser(user: CreateUser!) : User
+    updateUser(user: UpdateUser!) : User
+    deleteUserById(id: ID!) : Boolean
+}

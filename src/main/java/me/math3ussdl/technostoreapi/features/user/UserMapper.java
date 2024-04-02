@@ -1,4 +1,4 @@
-package me.math3ussdl.technostoreapi.user;
+package me.math3ussdl.technostoreapi.features.user;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-import me.math3ussdl.technostoreapi.user.dto.UserCreateDto;
-import me.math3ussdl.technostoreapi.user.dto.UserDto;
-import me.math3ussdl.technostoreapi.user.internal.User;
+import me.math3ussdl.technostoreapi.features.user.dto.UserCreateDto;
+import me.math3ussdl.technostoreapi.features.user.dto.UserDto;
+import me.math3ussdl.technostoreapi.features.user.internal.User;
 
 @Mapper
 public interface UserMapper {
